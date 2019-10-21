@@ -8,9 +8,9 @@
 
   
  
-$chek_id = mysql_query("SELECT a.id_grp FROM (SELECT * from dt_grp where PARENT_ID='$id') a
+$chek_id = mysql_query("SELECT a.ID_GRP FROM (SELECT * from dt_grp where PARENT_ID='$id') a
     UNION
-    SELECT b.id_grp FROM (SELECT * from dt_grp where PARENT_ID IN(SELECT ID_GRP from dt_grp where PARENT_ID='$id')) b");
+    SELECT b.ID_GRP FROM (SELECT * from dt_grp where PARENT_ID IN(SELECT ID_GRP from dt_grp where PARENT_ID='$id')) b");
   $chek_num=mysql_num_rows($chek_id);
 
 
