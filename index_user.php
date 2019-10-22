@@ -81,7 +81,7 @@ if (isset($_SESSION["lastActivity"])) {
     }
   }
 
-  // $_SESSION["lastActivity"] = time();
+  $_SESSION["lastActivity"] = time();
 
 
   ?>
